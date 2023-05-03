@@ -30,7 +30,8 @@ def get_player(player_id):
             'weight': info['WEIGHT'].iloc[0],
             'position': info['POSITION'].iloc[0],
             'number': info['JERSEY'].iloc[0],
-            'team': info['TEAM_NAME'].iloc[0]
+            'team': info['TEAM_NAME'].iloc[0],
+            'id': player_id
         },
         'career_averages': {
             'PPG': round(career_totals['PTS'].sum() / career_totals['GP'].sum(), 1),
